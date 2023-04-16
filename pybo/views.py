@@ -1,7 +1,10 @@
 from django.shortcuts import render
 
 # Create your views here.
-from django.http import HttpResponse
+from .models import Question
 
+# QuestionList
 def index(request):
-    return HttpResponse("안녕하세요 pybo입니다.")
+    question_list = Question.objects.order_by('-create_date')
+    context = {'question_list':question_list}
+    return render(request, 'pybo/question_list.html', context)
