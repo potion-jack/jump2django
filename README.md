@@ -6,3 +6,8 @@
 2.
 테이블 생성을 위해 가장 먼저 해야 할 일은 pybo 앱을 config/settings.py 파일의 INSTALLED_APPS 항목에 추가하는 일이다.
 ```
+
+```
+admin
+1111
+```
